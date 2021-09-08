@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+    <link rel="stylesheet" href="css/thirdParty/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lemonade.css">
+    <script src="js/thirdParty/jquery.min.js"></script>
+    <script src="js/thirdParty/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h3>Lemonade Ratio Calculator</h3>
+    <form>
+        <div class="form-group">
+            <label for="lemonRatio">Lemon Ratio:</label>
+            <span class="tooltip2 hidden">
+                <span class="tooltiptext2"></span>
+            </span>
+            <input id="lemonRatio" name="lemonRatio" class="form-control input-sm" type="text" value=".25"/>
+        </div>
+
+        <div class="form-group">
+            <label for="sugarRatio">Sugar Ratio:</label>
+            <span class="tooltip2 hidden">
+                <span class="tooltiptext2">Invalid Input</span>
+            </span>
+            <input id="sugarRatio" name="sugarRatio" class="form-control input-sm" type="text" value=".16"/>
+        </div>
+
+        <div class="form-group">
+            <label for="waterRatio">Water Ratio:</label>
+            <span class="tooltip2 hidden">
+                <span class="tooltiptext2"></span>
+            </span>
+            <input id="waterRatio" name="waterRatio" class="form-control input-sm" type="text" value=".59"/>
+        </div>
+
+        <div class="form-group">
+            <label for="cupsOfLemonJuice">Cups of Lemon Juice:</label>
+            <span class="tooltip2 hidden">
+                <span class="tooltiptext2"></span>
+            </span>
+            <input id="cupsOfLemonJuice" name="cupsOfLemonJuice" class="form-control input-sm" type="text"/>
+        </div>
+
+        <div class="form-group">
+            <label>Suggested Cups of Water:</label>
+            <span id="waterResult"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Suggested Cups of Sugar:</label>
+            <span id="sugarResult"></span>
+        </div>
+
+    </form>
+</div>
+
+<script src="js/lemonade.js"></script>
+
+</body>
+</html>

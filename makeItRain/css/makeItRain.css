@@ -1,0 +1,31 @@
+.money {
+    position: absolute;
+    top: -50px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    color: #065C27;
+}
+
+.money:before {
+    content: "\f0d6";
+}
+
+.money2:before {
+    content: "\f0d6";
+}
+
+.money2 {
+    position: relative;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #065C27;
+}
+
+@keyframes example {
+    0%   {left:0; top:0;}
+    100%  {left:400px; top:400px;}
+}

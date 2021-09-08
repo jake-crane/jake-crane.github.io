@@ -1,0 +1,44 @@
+/*div.container {
+    max-width: 330px;
+}*/
+
+.inputError {
+    border-color: red;
+}
+
+input.inputError:focus{
+    border-color: red;
+}
+
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip2 .tooltiptext2 {
+    width: 170px;
+    border: 1px solid red;
+    color: red;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    /*left: 50%;*/
+}
+
+.tooltip2 .tooltiptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+}
+
+.hidden {
+    display: none;
+}

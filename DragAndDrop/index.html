@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+    <link rel="stylesheet" href="css/drag.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/thirdParty/jquery.contextMenu.min.css">
+    <script src="js/thirdParty/jquery-3.1.1.js"></script>
+    <script src="js/thirdParty/jquery.contextMenu.js"></script>
+    <script src="js/thirdParty/jquery.ui.position.js"></script>
+    <script src="js/drag.js"></script>
+    <script src="js/contextMenu.js"></script>
+    <script src="js/properties.js"></script>
+</head>
+<body>
+
+<div class="mycontainer">
+    <div class="dragPanel">
+        <button class="draggable startingPosition">Button</button>
+        <input class="draggable startingPosition" size="4" value="Input"/>
+        <select class="draggable startingPosition">
+            <option>Combobox</option>
+        </select>
+        <select multiple class="draggable startingPosition">
+            <option>Listbox</option>
+        </select>
+        <textarea class="draggable startingPosition">TextArea</textarea>
+    </div>
+
+    <div class="canvas"></div>
+
+    <div class="properties">
+        <div>
+            <label for="height">Height:</label>
+            <br/>
+            <input id="height" size="5"/>
+        </div>
+        <div>
+            <label for="width">Width:</label>
+            <br/>
+            <input id="width" size="5"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>

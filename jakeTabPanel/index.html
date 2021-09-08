@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+    <title>Jake TabPanel</title>
+    <link rel="stylesheet" href="css/jakeTabPanel.css">
+    <script src="js/thirdParty/jquery-2.2.2.js"></script>
+    <script src="js/thirdParty/jquery-ui.js"></script>
+    <script src="js/jakeTabPanel.js"></script>
+</head>
+<body>
+
+<div class="tabPanel">
+    <div tabHeader="Tab1">
+        <h3>tab 1</h3>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+    <div tabHeader="Tab2">
+        <h3>tab 2</h3>
+        <ul>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+        </ul>
+    </div>
+    <div tabHeader="Tab3">
+        <h3>tab 3</h3>
+        <ul>
+            <li>a1</li>
+            <li>b2</li>
+            <li>c3</li>
+            <li>d4</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    (function ($) {
+        $('.tabPanel').tabPanel();
+    })(jQuery);
+</script>
+
+</body>
+</html>

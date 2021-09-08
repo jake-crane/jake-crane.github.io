@@ -1,0 +1,72 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #f0f0f0;
+    z-index: 9999;
+}
+
+input[type=text].txtbox {
+    color: black;
+    height: 25px;
+    width: 260px;
+    border-top: 1px solid #f0f0f0;
+    border-right: 0;
+    border-left: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding-left: 5px;
+    outline: none;
+    -webkit-appearance: none; /*Ensure no shadows on iPhone Safari*/
+    border-radius: 0; /*Ensure no rounded borders on iPhone Safari*/
+}
+
+.txtbox-btn {
+    width: 25px;
+    height: 23px;
+    border-top: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+    text-decoration: none;
+    line-height: 25px;
+    color: #585858;
+    display: inline-block;
+}
+
+.combobox {
+    position: relative;
+    width: 280px;
+    height: 25px;
+}
+
+.combobox input[type=text].txtbox, .combobox .txtbox-btn {
+    position: absolute;
+}
+
+.combobox .txtbox-btn {
+    right: 0;
+}
+
+.combobox + .combobox-options {
+    width: 278px;
+    position: absolute;
+    background: white;
+    color: black;
+}
+
+.combobox + .combobox-options li {
+    height: 25px;
+    display: table;
+    width: 100%;
+    cursor: pointer;
+}
+
+.combobox + .combobox-options li:hover {
+    border: 1px solid #f0f0f0;
+}
+
+.combobox + .combobox-options li span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 5px;
+}

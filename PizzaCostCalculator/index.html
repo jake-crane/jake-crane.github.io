@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+    <link rel="stylesheet" href="css/thirdParty/bootstrap.min.css">
+    <link rel="stylesheet" href="css/PizzaCostCalculator.css">
+    <script src="js/thirdParty/jquery.min.js"></script>
+    <script src="js/thirdParty/bootstrap.min.js"></script>
+    <script src="js/PizzaCostCalculator.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h3>Pizza Cost Calculator</h3>
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                <label>Size</label>
+            </th>
+            <th>
+                <label>Inches</label>
+            </th>
+            <th>
+                <label>Price</label>
+            </th>
+            <th>
+                <label>Price Per Square-Inch</label>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <label for="smallInches">Small</label>
+            <td>
+                <input id="smallInches" class="form-control input-sm" value="10"/>
+            </td>
+            <td>
+                <input id="smallPrice" class="form-control input-sm" value="9.00"/>
+            </td>
+            <td>
+                <span id="smallPPSI"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="mediumInches">Medium</label>
+            </td>
+            <td>
+                <input id="mediumInches" class="form-control input-sm" value="12"/>
+            </td>
+            <td>
+                <input id="mediumPrice" class="form-control input-sm" value="11.25"/>
+            </td>
+            <td>
+                <span id="mediumPPSI"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="largeInches">Large</label>
+            </td>
+            <td>
+                <input id="largeInches" class="form-control input-sm" value="14"/>
+            </td>
+            <td>
+                <input id="largePrice" class="form-control input-sm" value="13.50"/>
+            </td>
+            <td>
+                <span id="largePPSI"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="xlInches">Extra Large</label>
+            </td>
+            <td>
+                <input id="xlInches" class="form-control input-sm" value="16"/>
+            </td>
+            <td>
+                <input id="xlPrice" class="form-control input-sm" value="15.75"/>
+            </td>
+            <td>
+                <span id="xlPPSI"></span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

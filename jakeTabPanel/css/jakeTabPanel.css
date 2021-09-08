@@ -1,0 +1,38 @@
+
+.tabPanel {
+    margin-top: 5px;
+}
+
+.tabPanel>ul {
+    padding: 0;
+}
+
+.tabPanel>ul li {
+    display: inline;
+}
+
+.tabPanel ul li a {
+    background-color: #787878;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 6px 6px 0 0;
+    border: 1px solid #555;
+}
+
+.tabPanel ul li.active a {
+    background-color: #f1f1f1;
+    color: black;
+    border-bottom: 0px;
+ }
+
+.tabPanel div {
+    background-color: #f1f1f1;
+    margin-top: -15px;
+    border: 1px solid black;
+    border-top: 0;
+    width: 209px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+

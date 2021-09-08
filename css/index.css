@@ -1,0 +1,79 @@
+body {
+	padding: 55px 10px 10px 10px;
+}
+
+.starter-template {
+	padding: 40px 15px;
+	text-align: center;
+}
+
+.navPanel {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	max-width: 200px;
+}
+
+ul.navPanel li a {
+	background-color: #f1f1f1;
+	display: block;
+	color: black;
+	padding: 8px 2px 8px 2px;
+	text-decoration: none;
+	border-style:solid;
+	border-color: #555;
+	border-width: 0 1px 1px 1px;
+}
+
+ul.navPanel li:first-child a {
+	border-top: 1px solid #555;
+}
+
+ul.navPanel li a:hover {
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+ul.navPanel li {
+	text-align: center;
+}
+
+iframe {
+    border-style: ridge;
+}
+
+#preview {
+    height: 100%;
+    width: 100%;
+}
+
+#previewContainer {
+    width: 100%;
+    max-width: 650px;
+    height: 420px;
+	opacity: 0;
+}
+
+.jakeHidden {
+	display: none;
+}
+
+a {
+	/*Remove focus rect in ie*/
+	outline: none !important;
+}
+
+ul.navPanel li a.selectedPreview {
+	background-color: #555;
+	color: white;
+}
+
+@media screen and (max-width: 767px) {
+    ul.navPanel li a.selectedPreview {
+        background-color: #f1f1f1;
+		color: black;
+    }
+}
+html, body {
+    height:100%;
+}

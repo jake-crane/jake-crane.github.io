@@ -1,0 +1,103 @@
+.draggable {
+    position: absolute;
+}
+
+.dragPanel {
+    float: left;
+    height: 160px;
+    width: 100px;
+    border-style: solid;
+    z-index: 5;
+    margin: 5px;
+}
+
+.canvas {
+    width: 500px;
+    height: 380px;
+    float: left;
+    border: solid 1px;
+    margin: 5px;
+}
+
+.mycontainer {
+    max-width: 800px;
+    max-height: 800px;
+}
+
+button.startingPosition {
+    top: 20px;
+    left: 20px;
+}
+
+input.startingPosition {
+    top: 50px;
+    left: 20px;
+    max-width: 70px;
+}
+
+select.startingPosition {
+    top: 80px;
+    left: 20px;
+    width: 90px;
+}
+
+select[multiple].startingPosition {
+    top: 110px;
+    left: 20px;
+    height: 20px;
+    width: 80px;
+}
+
+textarea.startingPosition {
+    top: 145px;
+    left: 20px;
+    height: 20px;
+    width: 80px;
+}
+
+.selected {
+    border-style: solid;
+    /*border-color: cyan;*/
+}
+
+.properties {
+    float: left;
+    border-style: solid;
+    padding: 5px;
+    margin: 5px;
+}
+
+.deleteable {
+    color: red;
+    position: absolute;
+    z-index: 10;
+    font-size: 12px !important;
+}
+
+.deleteable::before {
+    content: 'cancel';
+}
+
+.selected,.deleteable {
+    animation: shake 0.3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    animation-iteration-count:infinite;
+}
+
+@keyframes shake {
+    50% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(-2deg);
+    }
+}
+
+@media (max-width: 739px) {
+    .canvas {
+        width: 200px;
+    }
+}

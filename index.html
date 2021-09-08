@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jake Crane</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="css/thirdParty/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/thirdParty/jquery-ui.css">
+    <script src="js/thirdParty/jquery.min.js"></script>
+    <script src="js/thirdParty/bootstrap.min.js"></script>
+    <script src="js/thirdParty/jquery-ui.js"></script>
+    <script src="js/thirdParty/TweenMax.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=".">Jake Crane</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul id="headerList" class="nav navbar-nav">
+                    <li class="active">
+                        <a id="homeLink" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a id="contactLink" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="home" class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <div>
+                    <h3>External Links</h3>
+                    <ul class="navPanel">
+                        <li>
+                            <a href="https://www.linkedin.com/in/jakecrane">My LinkedIn Profile</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/jake-crane?tab=repositories">My Github Projects</a>
+                        </li>
+                        <li>
+                            <a href="https://bitbucket.org/jake_crane">My Bitbucket Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="liveExamples">
+                    <h3>Live Examples</h3>
+                    <ul class="navPanel">
+                        <li>
+                            <a class="selectedPreview" href="./LemonadeCalculator/">Lemonade Calculator</a>
+                        </li>
+                        <li>
+                            <a href="./PizzaCostCalculator/">Pizza Cost Calculator</a>
+                        </li>
+                        <li>
+                            <a href="./DragAndDrop/">Drag And Drop</a>
+                        </li>
+                        <li>
+                            <a href="./makeItRain/">Make it Rain</a>
+                        </li>
+                        <li>
+                            <a href="./Breakout/">Breakout</a>
+                        </li>
+                        <li>
+                            <a href="./jakeCombobox/">jakeCombobox</a>
+                        </li>
+                        <li>
+                            <a href="./jakeTabPanel/">jakeTabPanel</a>
+                        </li>
+                        <li>
+                            <a href="./react-minesweeper/">React Minesweeper</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-9 hidden-xs">
+                <h3>Live Example Preview</h3>
+                <div id="previewContainer">
+                    <iframe id="preview" name="preview" src="./LemonadeCalculator/"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="jakeHidden">
+        <span>Email:
+            <a href="mailto:contact@jakecrane.com">contact@jakecrane.com</a>
+        </span>
+    </div>
+
+</body>
+
+</html>
