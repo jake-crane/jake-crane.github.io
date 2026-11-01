@@ -1,128 +1,330 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jake Crane</title>
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="css/thirdParty/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/thirdParty/jquery-ui.css" />
-    <script src="js/thirdParty/jquery.min.js"></script>
-    <script src="js/thirdParty/bootstrap.min.js"></script>
-    <script src="js/thirdParty/jquery-ui.js"></script>
-    <script src="js/thirdParty/TweenMax.min.js"></script>
-    <script src="js/index.js"></script>
-  </head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jake Crane — Senior Software Engineer</title>
+  <meta name="description" content="Jake Crane is a senior software engineer in Overland Park, KS, building accessible, performant React and TypeScript applications with a full-stack Java/Spring background." />
+  <meta property="og:title" content="Jake Crane — Senior Software Engineer" />
+  <meta property="og:description" content="React, TypeScript, and full-stack engineering. 11 years building web applications." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
+  <link rel="icon" href="favicon.svg?v=5" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=6" />
+  <script>
+    try {
+      const t = localStorage.getItem('theme');
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#navbar"
-            aria-expanded="false"
-            aria-controls="navbar"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href=".">Jake Crane</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Jake Crane, home">JC<span class="brand-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container" id="top">
+      <p class="eyebrow mono">Overland Park, KS · Sr. Software Engineer at TouchNet</p>
+      <h1 class="hero-title">
+        Hi, I'm Jake.<br />
+        I build <em>accessible</em>, fast web apps &mdash; front to back.
+      </h1>
+      <p class="hero-lede">
+        Senior frontend engineer with <strong><span data-years>11</span> years</strong> of professional experience,
+        specializing in React and TypeScript. I build shared component libraries, modernize tooling,
+        and bring a full-stack perspective from Java, Spring Boot, and SQL.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:jakecrane91@gmail.com">Get in touch</a>
+        <a class="btn btn-ghost" href="#projects">See my work</a>
+      </div>
+      <ul class="hero-links" aria-label="Profiles">
+        <li><a href="https://github.com/jake-crane" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+          github.com/jake-crane</a></li>
+        <li><a href="https://www.linkedin.com/in/jakecrane" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+          linkedin.com/in/jakecrane</a></li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <div class="section-head">
+        <span class="section-num mono">01</span>
+        <h2 id="about-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I've spent the last decade-plus building enterprise web applications, and these days I focus on the frontend:
+            scalable React and TypeScript apps, shared npm packages and component libraries used across product lines, and
+            the tooling that keeps teams moving quickly.
+          </p>
+          <p>
+            I care a lot about the people on both sides of the screen. For users, that means WCAG accessibility and fast load
+            times. For developers, it means sensible architecture, solid tests, and code reviews that actually teach something.
+          </p>
+          <p>
+            Because I started out full stack &mdash; Java REST services, Oracle and SQL Server stored procedures, CI/CD on AWS &mdash;
+            I'm comfortable taking a feature from the database all the way to the UI when that's what the job needs.
+          </p>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul id="headerList" class="nav navbar-nav">
-            <li class="active">
-              <a id="homeLink" href="#">Home</a>
-            </li>
-            <li>
-              <a id="contactLink" href="#">Contact</a>
-            </li>
+        <dl class="stats">
+          <div class="stat"><dt>Years shipping software</dt><dd><span data-years>11</span>+</dd></div>
+          <div class="stat"><dt>Companies</dt><dd>3</dd></div>
+          <div class="stat"><dt>Company awards</dt><dd>2</dd></div>
+          <div class="stat"><dt>Public repos on GitHub</dt><dd>75+</dd></div>
+        </dl>
+      </div>
+
+      <div class="skills" aria-label="Technical skills">
+        <div class="skill-group">
+          <h3 class="mono">Frontend</h3>
+          <ul class="tags">
+            <li>React</li><li>TypeScript</li><li>JavaScript (ES6+)</li><li>HTML</li><li>CSS Grid &amp; Flexbox</li><li>Redux</li><li>Angular</li><li>Next.js</li><li>Tailwind</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="mono">Ecosystem</h3>
+          <ul class="tags">
+            <li>React Query</li><li>React Router</li><li>React Table</li><li>Zod</li><li>Vite</li><li>Webpack</li><li>Component libraries</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="mono">Quality</h3>
+          <ul class="tags">
+            <li>WCAG accessibility</li><li>Jest</li><li>Jasmine</li><li>Karma</li><li>QUnit</li><li>JUnit</li><li>ESLint</li><li>Code review</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="mono">Backend &amp; Cloud</h3>
+          <ul class="tags">
+            <li>Java</li><li>Spring Boot</li><li>REST APIs</li><li>PostgreSQL</li><li>Oracle</li><li>SQL Server</li><li>AWS</li><li>Docker</li><li>Jenkins</li><li>CI/CD</li>
           </ul>
         </div>
       </div>
-    </nav>
+    </section>
 
-    <div id="home" class="container-fluid">
-      <div class="row content">
-        <div class="col-sm-3 sidenav">
-          <div>
-            <h3>External Links</h3>
-            <ul class="navPanel">
-              <li>
-                <a href="https://www.linkedin.com/in/jakecrane"
-                  >My LinkedIn Profile</a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/jake-crane?tab=repositories"
-                  >My Github Projects</a
-                >
-              </li>
-              <li>
-                <a href="https://bitbucket.org/jake_crane"
-                  >My Bitbucket Projects</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div id="liveExamples">
-            <h3>Live Examples</h3>
-            <ul class="navPanel">
-              <li>
-                <a class="selectedPreview" href="./LemonadeCalculator/"
-                  >Lemonade Calculator</a
-                >
-              </li>
-              <li>
-                <a href="./PizzaCostCalculator/">Pizza Cost Calculator</a>
-              </li>
-              <li>
-                <a href="./DragAndDrop/">Drag And Drop</a>
-              </li>
-              <li>
-                <a href="./makeItRain/">Make it Rain</a>
-              </li>
-              <li>
-                <a href="./Breakout/">Breakout</a>
-              </li>
-              <li>
-                <a href="./jakeCombobox/">jakeCombobox</a>
-              </li>
-              <li>
-                <a href="./jakeTabPanel/">jakeTabPanel</a>
-              </li>
-              <li>
-                <a href="./react-minesweeper/">React Minesweeper</a>
-              </li>
-              <li>
-                <a href="./download-calculator/">Download Calculator</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-sm-9 hidden-xs">
-          <h3>Live Example Preview</h3>
-          <div id="previewContainer">
-            <iframe
-              id="preview"
-              name="preview"
-              src="./LemonadeCalculator/"
-            ></iframe>
-          </div>
-        </div>
+    <!-- Experience -->
+    <section class="section container" id="experience" aria-labelledby="experience-title">
+      <div class="section-head">
+        <span class="section-num mono">02</span>
+        <h2 id="experience-title">Experience</h2>
       </div>
-    </div>
 
-    <div id="contact" class="jakeHidden">
-      <span
-        >Email:
-        <a href="mailto:contact@jakecrane.com">contact@jakecrane.com</a>
-      </span>
-    </div>
-  </body>
+      <ol class="timeline">
+        <li class="job">
+          <div class="job-meta">
+            <p class="job-dates mono">Oct 2020 — Present</p>
+            <p class="job-loc">Lenexa, KS</p>
+          </div>
+          <div class="job-body">
+            <h3>Sr. Software Engineer <span class="at">@ TouchNet</span></h3>
+            <p class="job-sub">A Global Payments company</p>
+            <ul class="job-points">
+              <li>Architect and maintain scalable React + TypeScript applications supporting multiple TouchNet product lines, with an emphasis on maintainability, accessibility, and performance.</li>
+              <li>Build shared npm packages and frontend component libraries used across teams, reducing duplication and improving UI consistency and developer velocity.</li>
+              <li>Modernized frontend tooling: migrated apps from Webpack to Vite, upgraded to ESLint v9, and adopted modern TypeScript practices.</li>
+              <li>Moved client data flows from Redux toward React Query for server state, and added runtime API response validation with Zod.</li>
+              <li>Drive performance work and WCAG accessibility compliance; mentor developers through code reviews, testing, and linting standards.</li>
+              <li>Extend Java / Spring Boot microservices and REST APIs &mdash; admin settings, role-based access, cashiering, refunds &mdash; to ship features end to end.</li>
+            </ul>
+            <ul class="awards" aria-label="Awards">
+              <li><span aria-hidden="true">★</span> Excellence Award · Feb 2025</li>
+              <li><span aria-hidden="true">★</span> TouchNet Values Award · Dec 2022</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job-meta">
+            <p class="job-dates mono">Jun 2020 — Oct 2020</p>
+            <p class="job-loc">Kansas City, MO</p>
+          </div>
+          <div class="job-body">
+            <h3>Front-End Developer <span class="at">@ Trip Mate</span></h3>
+            <ul class="job-points">
+              <li>Dedicated front-end developer building new features and UI enhancements with React, Redux, TypeScript, and ES6+ for an internal back-office application.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job-meta">
+            <p class="job-dates mono">Jun 2015 — Jun 2020</p>
+            <p class="job-loc">Kansas City, MO</p>
+          </div>
+          <div class="job-body">
+            <h3>Sr. Software Engineer <span class="at">@ SS&amp;C Technologies</span></h3>
+            <p class="job-sub">Formerly DST Systems · Software Developer → Staff Software Developer → Software Engineer → Sr. Software Engineer</p>
+            <ul class="job-points">
+              <li>Led the migration of a legacy BPMN application to Angular and bpmn.io, with responsive layouts in CSS Grid, Flexbox, and Angular Material, tested with Jasmine and Karma.</li>
+              <li>Architected a Microsoft Word Add-in integrated with a web workflow app, letting users build letters and templates with reusable content and variable placeholders.</li>
+              <li>Cut a 40+ minute QUnit integration suite down by splitting it into parallel sub-suites across the Selenium runner and Jenkins jobs.</li>
+              <li>Moved the application's CI/CD to AWS, writing build/deploy specs and configuring AMIs.</li>
+              <li>Built Java REST services and optimized SQL and stored procedures for Oracle and SQL Server.</li>
+              <li>Served as team Tech Lead: ran Agile ceremonies, managed the sprint backlog, and mentored interns and junior developers.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job-meta">
+            <p class="job-dates mono">2012 — May 2015</p>
+            <p class="job-loc">Warrensburg, MO</p>
+          </div>
+          <div class="job-body">
+            <h3>B.S. Computer Science <span class="at">@ University of Central Missouri</span></h3>
+            <ul class="job-points">
+              <li>Teaching Assistant for three database classes totaling 150+ students in my final semester.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <p class="resume-cta">
+        Want the one-pager?
+        <a href="resume.pdf" download>Download my resume (PDF)</a>
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <span class="section-num mono">03</span>
+        <h2 id="projects-title">Side projects</h2>
+      </div>
+      <p class="section-intro">Things I build outside of work to try new stacks and scratch my own itches.</p>
+
+      <div class="projects">
+        <article class="project project-feature">
+          <div class="project-top">
+            <h3>Wickword</h3>
+            <span class="project-kind mono">Multiplayer game</span>
+          </div>
+          <p>
+            A fast real-time word game. Each turn you get a 2–3 letter chunk and a burning wick &mdash; type a word containing
+            it before the fuse runs out. Server-authoritative game engine with turn timers, scoring, and bonus rules, a
+            275k-word dictionary, and rooms over WebSockets.
+          </p>
+          <ul class="tags tags-sm"><li>Next.js</li><li>Socket.IO</li><li>TypeScript</li><li>Node</li></ul>
+          <div class="project-links">
+            <a href="https://github.com/jake-crane/wickword" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <article class="project project-feature">
+          <div class="project-top">
+            <h3>WorthSnap</h3>
+            <span class="project-kind mono">Full-stack app</span>
+          </div>
+          <p>
+            A personal net-worth tracker. Record snapshots of assets and liabilities, then see the trend over time and how
+            each item moved since the last snapshot. React front end on a Spring Boot 4 / Java 21 API with Flyway-managed Postgres.
+          </p>
+          <ul class="tags tags-sm"><li>React</li><li>Vite</li><li>Spring Boot</li><li>Java 21</li><li>PostgreSQL</li><li>Docker</li></ul>
+          <div class="project-links">
+            <a href="https://worthsnap-alpha.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://github.com/jake-crane/worthsnap" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3>HealthSnap</h3>
+            <span class="project-kind mono">Web app</span>
+          </div>
+          <p>Track blood test results over time with reference ranges and trend charts. Google sign-in, serverless Postgres, and a seeded catalog of common panels.</p>
+          <ul class="tags tags-sm"><li>Next.js</li><li>Drizzle</li><li>Neon</li><li>Auth.js</li><li>Recharts</li></ul>
+          <div class="project-links">
+            <a href="https://healthsnap-zeta.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://github.com/jake-crane/healthsnap" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3>WeightSnap</h3>
+            <span class="project-kind mono">Web app</span>
+          </div>
+          <p>Log snapshots of your weight and see your trend over time. A small, focused Next.js app deployed on Vercel.</p>
+          <ul class="tags tags-sm"><li>Next.js</li><li>TypeScript</li></ul>
+          <div class="project-links">
+            <a href="https://weightsnap.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://github.com/jake-crane/weightsnap" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+
+        <article class="project">
+          <div class="project-top">
+            <h3>Duplicate File Finder</h3>
+            <span class="project-kind mono">Java CLI + API</span>
+          </div>
+          <p>Scans large drives, hashes file contents, and fingerprints whole folders to report duplicate files <em>and</em> duplicate directory trees. Results are cached in SQLite so rescans are incremental, with an optional Spring Boot server mode.</p>
+          <ul class="tags tags-sm"><li>Java</li><li>Spring Boot</li><li>SQLite</li></ul>
+          <div class="project-links">
+            <a href="https://github.com/jake-crane/duplicate-file-finder-java" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <details class="more-projects">
+        <summary>More experiments &amp; older projects</summary>
+        <ul>
+          <li><a href="https://github.com/jake-crane/React-Minesweeper" target="_blank" rel="noopener">React Minesweeper</a> <span class="mono">JavaScript</span></li>
+          <li><a href="https://github.com/jake-crane/spring-boot-todo-app" target="_blank" rel="noopener">Spring Boot Todo API</a> <span class="mono">Java</span></li>
+          <li><a href="https://github.com/jake-crane/react-lib-vite" target="_blank" rel="noopener">React component library with Vite</a> <span class="mono">TypeScript</span></li>
+          <li><a href="https://github.com/jake-crane/custom-combobox-web-component" target="_blank" rel="noopener">Custom combobox web component</a> <span class="mono">JavaScript</span></li>
+          <li><a href="https://github.com/jake-crane/esbuild-example" target="_blank" rel="noopener">esbuild</a> &amp; <a href="https://github.com/jake-crane/swc-example" target="_blank" rel="noopener">SWC</a> build experiments <span class="mono">TypeScript</span></li>
+          <li><a href="https://github.com/jake-crane/AffineCipher" target="_blank" rel="noopener">Affine cipher</a> <span class="mono">C</span></li>
+          <li><a href="https://github.com/jake-crane?tab=repositories" target="_blank" rel="noopener">Everything else on GitHub →</a></li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- Contact -->
+    <section class="section container contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-head">
+        <span class="section-num mono">04</span>
+        <h2 id="contact-title">Let's talk</h2>
+      </div>
+      <p class="contact-lede">
+        I'm always happy to chat about frontend architecture, accessibility, or a role where I can help a team ship better software.
+      </p>
+      <div class="contact-row">
+        <a class="contact-email" href="mailto:jakecrane91@gmail.com">jakecrane91@gmail.com</a>
+        <button class="btn btn-ghost copy-btn" type="button" data-copy="jakecrane91@gmail.com">Copy</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year">2026</span> Jake Crane · Overland Park, Kansas</p>
+    <p class="mono">Hand-written HTML &amp; CSS. No framework required.</p>
+  </footer>
+
+  <script src="script.js?v=2"></script>
+</body>
 </html>
