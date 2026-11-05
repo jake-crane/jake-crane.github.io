@@ -175,7 +175,40 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 }
 
 /* Hero */
-.hero { padding-top: 96px; padding-bottom: 72px; }
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  align-items: center;
+  gap: 56px;
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+.hero-photo {
+  display: block;
+  width: 280px;
+  height: auto;
+  aspect-ratio: 280 / 373;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: var(--tag-bg);
+}
+/* The photo column takes width from the headline, so keep it to three lines */
+@media (min-width: 861px) {
+  .hero .hero-title { font-size: clamp(38px, 4.6vw, 56px); }
+}
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 48px; }
+  /* On narrow screens the photo becomes a small circle above the text */
+  .hero-photo {
+    order: -1;
+    width: 112px;
+    aspect-ratio: 1;
+    object-position: 50% 18%;
+    border-radius: 999px;
+  }
+}
 .eyebrow {
   color: var(--accent);
   font-size: 13px;
