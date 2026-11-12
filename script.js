@@ -57,7 +57,7 @@
       },
       { threshold: 0.08 }
     );
-    document.querySelectorAll('.job, .project, .stat, .skill-group').forEach((el) => {
+    document.querySelectorAll('.job, .project, .skill-group').forEach((el) => {
       el.classList.add('reveal');
       revealObserver.observe(el);
     });

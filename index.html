@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=11" />
+  <link rel="stylesheet" href="styles.css?v=12" />
   <script>
     try {
       const t = localStorage.getItem('theme');
@@ -51,7 +51,7 @@
     <!-- Hero -->
     <section class="hero container" id="top">
       <div class="hero-text">
-        <p class="eyebrow mono">Overland Park, KS · Sr. Software Engineer at TouchNet</p>
+        <p class="eyebrow mono">Overland Park, KS · Sr. Software Engineer at TouchNet, A Global Payments Company</p>
         <h1 class="hero-title">
           Hi, I'm Jake.<br />
           I build <em>accessible</em>, fast web apps &mdash; front to back.
@@ -84,28 +84,20 @@
         <span class="section-num mono">01</span>
         <h2 id="about-title">About</h2>
       </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            I've spent the last decade-plus building enterprise web applications, and these days I focus on the frontend:
-            scalable React and TypeScript apps, shared npm packages and component libraries used across product lines, and
-            the tooling that keeps teams moving quickly.
-          </p>
-          <p>
-            I care a lot about the people on both sides of the screen. For users, that means WCAG accessibility and fast load
-            times. For developers, it means sensible architecture, solid tests, and code reviews that actually teach something.
-          </p>
-          <p>
-            Because I started out full stack &mdash; Java REST services, Oracle and SQL Server stored procedures, CI/CD on AWS &mdash;
-            I'm comfortable taking a feature from the database all the way to the UI when that's what the job needs.
-          </p>
-        </div>
-        <dl class="stats">
-          <div class="stat"><dt>Years shipping software</dt><dd><span data-years>11</span>+</dd></div>
-          <div class="stat"><dt>Companies</dt><dd>3</dd></div>
-          <div class="stat"><dt>Company awards</dt><dd>2</dd></div>
-          <div class="stat"><dt>Public repos on GitHub</dt><dd>75+</dd></div>
-        </dl>
+      <div class="about-text">
+        <p>
+          I've spent the last decade-plus building enterprise web applications, and these days I focus on the frontend:
+          scalable React and TypeScript apps, shared npm packages and component libraries used across product lines, and
+          the tooling that keeps teams moving quickly.
+        </p>
+        <p>
+          I care a lot about the people on both sides of the screen. For users, that means WCAG accessibility and fast load
+          times. For developers, it means sensible architecture, solid tests, and code reviews that actually teach something.
+        </p>
+        <p>
+          Because I started out full stack &mdash; Java REST services, Oracle and SQL Server stored procedures, CI/CD on AWS &mdash;
+          I'm comfortable taking a feature from the database all the way to the UI when that's what the job needs.
+        </p>
       </div>
 
       <div class="skills" aria-label="Technical skills">
@@ -124,7 +116,7 @@
         <div class="skill-group">
           <h3 class="mono">Quality</h3>
           <ul class="tags">
-            <li>WCAG accessibility</li><li>Jest</li><li>Jasmine</li><li>Karma</li><li>QUnit</li><li>JUnit</li><li>ESLint</li><li>Code review</li>
+            <li>WCAG accessibility</li><li>Jest</li><li>Vitest</li><li>React Testing Library</li><li>JUnit</li><li>ESLint</li><li>Code review</li>
           </ul>
         </div>
         <div class="skill-group">
@@ -150,7 +142,7 @@
             <p class="job-loc">Lenexa, KS</p>
           </div>
           <div class="job-body">
-            <h3>Sr. Software Engineer <span class="at">@ TouchNet</span></h3>
+            <h3>Sr. Software Engineer <span class="at">@ TouchNet, A Global Payments Company</span></h3>
             <p class="job-sub">A Global Payments company</p>
             <ul class="job-points">
               <li>Build and maintain scalable React + TypeScript applications supporting multiple TouchNet product lines, with an emphasis on maintainability and accessibility.</li>
@@ -195,7 +187,7 @@
               <li><span class="role-title">Software Developer</span> <span class="role-dates mono">Jun 2015 — Sep 2016</span></li>
             </ol>
             <ul class="job-points">
-              <li>Migrated a legacy BPMN application to Angular and bpmn.io, developing responsive interfaces with Angular Material.</li>
+              <li>Migrated a legacy Adobe Flex BPMN application to Angular and bpmn.io, developing responsive interfaces with Angular Material.</li>
               <li>Researched and prototyped a C# Microsoft Word add-in to replace TinyMCE for letter writing in a web-based workflow app, then saw it through development and client rollout, with support for reusable paragraphs, variables, and images.</li>
               <li>Cut a 40+ minute QUnit integration suite to 15 minutes by splitting it into parallel sub-suites across the Selenium runner and Jenkins jobs.</li>
               <li>Moved the application's CI/CD to AWS, writing build/deploy specs and configuring AMIs.</li>
@@ -317,6 +309,6 @@
     <p>© <span id="year">2026</span> Jake Crane · Overland Park, Kansas</p>
   </footer>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
