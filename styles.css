@@ -304,7 +304,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 28px;
   margin-top: 56px;
 }
@@ -334,7 +334,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 }
 .tags-sm li { font-size: 12.5px; font-family: var(--font-mono); padding: 2px 8px; }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  .skills { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 680px) {
   .skills { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 520px) {
@@ -475,6 +478,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   text-decoration: none;
 }
 .project-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.project-links { flex-wrap: wrap; align-items: baseline; }
+.project-note { flex-basis: 100%; font-size: 13px; color: var(--muted); }
 
 /* An odd last card spans the full row instead of leaving a gap */
 .project:last-child:nth-child(odd) { grid-column: 1 / -1; }
